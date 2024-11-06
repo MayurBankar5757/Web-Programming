@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function power(x,y){
+            let pow =1;
+            for(let i=1;i<=y;i++){
+                pow = pow*x;
+            }
+            alert(x +" to the power "+ y +" is "+pow);
+        }
+    </script>
+    <div>
+        <form action="">
+            <table>
+                <tr>
+                    <td>Enter base number </td>
+                    <td><input type="text" name = "num1"></td>
+                </tr>
+                <tr>
+                    <td>Enter Exponent Number</td>
+                    <td><input type="text" name = "num2"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value ="Power" onclick="power(num1.value,num2.value)"></td>
+                </tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

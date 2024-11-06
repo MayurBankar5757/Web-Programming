@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <script>
+        function f1() {
+            alert("This is info message");
+        }
+
+        function f2() {
+            var age = prompt("Enter your age : ");
+            alert("Age : "+age);
+        }
+
+        function f3() {
+            if(confirm("Do u want to close?"))
+                alert("confirmed");
+            else
+                alert("Cancelled");
+        }
+    </script>
+</head>
+<body>
+    <button type="button" onclick="f1()">Alert</button>
+    <br/>
+    <button type="button" onclick="f2()">Prompt</button>
+    <br/>
+    <button type="button" onclick="f3()">Confirm</button>
+    <br/>
+</body>
+</html>

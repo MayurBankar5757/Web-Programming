@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <script>
+        /*
+        function myitr(value,index,array) {
+            document.write("<p>"+index +" => "+value+"</p>");
+        }
+        var nums = [8,3,9,2];
+        //1. function name
+        nums.forEach(myitr);  //myitr-called for every element
+        //2. anonymous function
+        document.write("<br/>***********<br/>");
+        document.write("<ul>");
+        nums.forEach(function(v,i){
+            document.write("<li> "+v+" is prsent at "+i+"</li>");
+        })
+        document.write("</ul>");
+        document.write("<br/>***********<br/>");
+        nums.forEach((v)=>{document.write(v+" , ")});
+        */
+
+        //sorting the array
+        /*
+        function mycompare(a,b) {
+            return b-a;
+        }
+        var nums = [8,32,9,22,10,100];
+        //nums.sort();
+        //document.write("<br/>"+nums.toString() );
+        nums.sort(mycompare);   //numeric sort
+        document.write("<br/>"+nums.toString() );
+        document.write("<br/>***********<br/>");
+        nums.sort(function(a,b){
+            return a-b;
+        });
+        document.write("<br/>"+nums.toString() );
+        document.write("<br/>***********<br/>");
+        nums.sort((a,b)=>a-b);
+        document.write("<br/>"+nums.toString() );
+        */
+   
+        var nums = [8,10,18,3];
+        //array of converted values
+        var squares = nums.map(function(v){
+            return v*v;
+        });
+        document.write("<br/>"+squares.toString());
+        var squares1 = nums.map(v=>v*v);
+        document.write("<br/>"+squares1.toString());
+
+        var sum = nums.reduce(function(s,v){
+            return s+v;            
+        })
+        document.write("<br/> sum : "+sum);
+        var sum1 = nums.reduce(function(s,v){
+            return s+v;            
+        },100);
+        document.write("<br/> sum1 : "+sum1);
+        //min is single value
+        var min = nums.reduce( (min,v) => min>v?v:min )
+        document.write("<br/> min : "+min);
+
+        //evens is array
+        var evens = nums.filter(v=>v%2==0);
+        document.write("<br/>"+evens.toString());
+
+        //alleven is boolean 
+        var alleven = nums.every(function(v){
+            return v%2==0;
+        })
+        document.write("<br/> All evens : "+alleven);
+
+        //someodd is boolean value
+        var someodd = nums.some(v=> v%2!=0);
+        document.write("<br/> some odd : "+someodd);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

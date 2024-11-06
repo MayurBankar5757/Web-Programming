@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <script>
+        function genTable() {
+            //console.log(x);
+            var x = document.getElementById("no").value;
+            console.log(x);
+            var str="";
+            str += "<table border='1' style='border-collapse: collapse'>";
+            for(var i=1;i<=10;i++){
+                str+="<tr>";
+                str+="<td>";
+                str+= x+ " * "+i+" = "+(x*i);    
+                str+="</td>";        
+                str+="</tr>";    
+            }   
+            str += "</table>" 
+            console.log(str);  
+            document.getElementById("table").innerHTML = str;
+        }
+    </script>
+</head>
+<body>
+    <form>
+        Enter number : 
+        <input type="number" name="num" id="no"/>
+        <br/>
+        Enter number2 : 
+        <input type="number" name="num2" id="no"/>
+        <br/>
+        <input type="button" value="Display Table"
+         onclick="genTable(num.value,num2.value)"/>
+    </form>
+    <div id="table">
+        table gets displayed....
+    </div>
+</body>
+</html>

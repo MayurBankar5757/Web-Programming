@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>    
+    <link href="images/mystyle.css" rel="stylesheet" type="text/css" />
+    <style>
+        /* grouping elements */
+        h1,h3,h4{
+            text-align: center;
+        }
+        /* selection on the basis of id  */
+        #mypara{
+            letter-spacing: 5px;
+        }
+        /* selection on the basis of class - generic class selector */
+        .info{
+            color: green;
+        }
+        /* specific class selectors */
+        p.info {
+            opacity: 0.3;
+        }
+        /* using attributes */
+        [type="text"]{
+            background-color: green;
+        }
+        [target="_blank"] {
+            color: magenta;
+        }
+       
+        p {
+            text-shadow: 1px 1px 5px blue;
+        }
+        a {
+            text-decoration: overline;
+        }
+        img {
+            border: 3px dotted red;
+        }
+    </style>
+</head>
+<body>
+    <h1> Web programming </h1>
+    <h3> Web page Design </h3>
+    <p class="info" style="background-color: lightgray;"> CSS helps in separation of content and style </p>
+    <p id="mypara" class="info"> There are 3 type of style sheets </p>
+    <ul class="info">
+        <li> Extrernal </li>
+        <li> Internal </li>
+        <li> Inline </li>
+    </ul>
+    <img src="images/Jellyfish.jpg" width="200" height="200" />
+    <br/>
+    <a href="#" style="background-color: lightgray;" target="_blank"> Learn more </a>
+    <br/>
+    <input type="text" name="uid" />
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+</body>
+</html>

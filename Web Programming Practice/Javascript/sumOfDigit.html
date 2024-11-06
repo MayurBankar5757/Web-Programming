@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function Getsum(x){
+            let rev =0;
+            let num = x;
+            let sum =0;
+            while(num > 0){
+                rev = num%10;
+                sum += rev;
+                num = parseInt(num/10);
+            }
+            document.getElementById("sum").innerHTML="Sum of Digit : "+sum;
+        }
+    </script>
+    <div>
+        <form action="">
+            <table>
+                <tr>
+                    <td>Enter a Number : </td>
+                    <td><input type="text" name="num"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" value="GetSum" onclick="Getsum(num.value)"></td>
+                </tr>
+
+            </table>
+        </form>
+    </div>
+    <div id = "sum">
+
+    </div>
+</body>
+</html>

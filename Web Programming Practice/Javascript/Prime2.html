@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkPrime(n){
+            let flag = true;
+                for (let i = 2; i <= n/2; i++) {
+                    if(n % i== 0){
+                        flag =false;
+                        break;
+                    }
+                }
+                if(flag){
+                    document.write("Prime Number");
+                }
+                else{
+                    document.write("Non Prime Number");
+                }
+        }
+    </script>
+    
+    <div>
+        <form action="">
+            <table>
+                <tr>
+                <td>
+                    Enter the Number :
+                </td>
+                <td>
+                    <input type="text" name = "value">
+                </td>
+            </tr>
+            <tr>
+                <td><input type="button" value="Check Prime" onclick="checkPrime(value.value)"></td>
+            </tr>
+            </table>
+        </form>
+    </div>
+    <div id ="prime">
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <script>
+       /*var arr = new Array(4,6,7,2);
+       document.write("<br/>"+arr.length);
+       var arr1 = new Array(100);
+       document.write("<br/>"+arr1.length);*/
+
+       /*
+       var arr = [7,"hello",false,null];
+       arr[5]=100;
+       document.write("<br/>"+arr.length);
+       arr[3] = "object";
+       document.write("<br/>"+arr.toString()); //joining character - comma
+       document.write("<br/>***********<br/>");
+       for(var i=0;i<arr.length;i++){
+          document.write("<br/>"+arr[i]);          
+       } 
+       document.write("<br/>***********<br/>");
+       //undefined elements are skipped
+       for(j in arr){
+          document.write("<br/>"+arr[j]);          
+       } 
+       document.write("<br/>***********<br/>");
+       for(val of arr) {
+           document.write("<br/>"+val); 
+       } */
+
+
+       var nums = [7,3,9,2,90,21,100,65];
+       document.write("<br/>last element : "+nums.pop());
+       document.write("<br/>"+nums.join(" * "));
+       nums.push(10);
+       document.write("<br/>"+nums.join(" * "));
+       document.write("<br/>first element : "+nums.shift());
+       document.write("<br/>"+nums.join(" * "));
+       nums.unshift(200);
+       document.write("<br/>"+nums.join(" * "));
+       nums.splice(3,1,99,88,21);
+       document.write("<br/>"+nums.join(" * ")); 
+       document.write("<br/> First occurence of 21 : "+ nums.indexOf(21) );
+       document.write("<br/> Last occurence of 21 : "+ nums.lastIndexOf(21) );
+       document.write("<br/>  occurence of 999 : "+ nums.lastIndexOf(999) );
+       nums.sort();  //natural ordering - ascii values
+       document.write("<br/>"+nums.join(" * ")); 
+       var myslice = nums.slice(3,8);
+       document.write("<br/>"+myslice.join(" * ")); 
+       var myslice1 = nums.slice(3);
+       document.write("<br/>"+myslice1.join(" * ")); 
+
+   </script>
+</head>
+<body>
+    
+</body>
+</html>

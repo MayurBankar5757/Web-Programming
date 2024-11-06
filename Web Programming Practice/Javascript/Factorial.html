@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function factorial(x){
+            let fact =1;
+            for(let i =1 ; i<=x; i++){
+
+                fact*=i;
+
+            }
+
+           // document.write(fact);
+            //alert("Factorial is :" +fact);
+            document.getElementById("no").innerHTML= "Factorial is : "+fact;
+    
+        }
+       // factorial(4);
+    </script>
+    <div>
+        <form action="">
+            <h3>Enter a Num : </h3>
+            <input type="text" name ="num">
+            <input type="button" value = "check Fact" onclick="factorial(num.value)" >
+        </form>
+    </div>
+    
+    <div id = "no">
+       
+    </div>
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <script>
+        //current date - no arg constructor
+        var cdate = new Date();
+        document.write("<br/>"+cdate);
+
+        var dt1 = new Date("2024-11-10");
+        document.write("<br/>"+dt1);
+        var dt2 = new Date("1 Nov 2024");
+        document.write("<br/>"+dt2);
+        var dt3 = new Date("Dec 12, 2024");
+        document.write("<br/>"+dt3);
+
+        var dt4 = new Date(89638945533);
+        document.write("<br/>"+dt4);
+
+        var dt5 = new Date(2023, 10);
+        document.write("<br/>"+dt5);
+
+        var days=["Sun","Mon","Tue","Wed","Thu","Fri","Sat"]
+        document.write("<br/> Weekday : "+days[cdate.getDay()])
+
+        function calAge(datestr) {
+            alert(datestr);
+            var dt = new Date(datestr);
+            var byear = dt.getFullYear();
+            var cyear = new Date().getFullYear();
+            alert("Age : "+(cyear-byear))
+        }
+
+    </script>
+</head>
+<body>
+    <form>
+        Enter bdate: 
+        <input type="date" name="bdate" />
+        <br/>
+        <input type="button" value="Cal Age" 
+        onclick="calAge(bdate.value)" />
+    </form>
+</body>
+</html>

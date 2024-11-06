@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+       body {
+    margin: 0; /* Removes default body margin */
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#mid {
+    background-image: url('/images/nature image.jpg');
+    background-size: cover;          /* Ensures the image covers the #mid section */
+    background-repeat: no-repeat;    /* Prevents the image from repeating */
+    background-position: center;     /* Centers the image */
+    background-attachment: fixed;    /* Keeps the image fixed when scrolling */
+    height: 100vh;                   /* Makes the #mid section take up full viewport height */
+    width: 100vw;                    /* Full width of viewport */
+    padding-top: 150px;              /* Adds space between the top of #mid and form */
+}
+
+#head {
+    display: inline-flex;
+}
+
+#head2 {
+    margin-left: 70px;
+    padding: 10px;
+    font-size: 1.2rem;
+}
+
+div a {
+    margin: 10px 40px 10px 20px;
+    text-decoration: none;
+    color: purple;
+}
+
+#form {
+    background: white;
+    height: 90vh;
+    width: 110vh;
+    display: block;
+    margin: auto;
+    padding: 20px;
+}
+
+table {
+    border-spacing: 0;
+    
+}
+
+a:hover {
+    background: lightgreen;
+}
+input{
+    padding: 2px;
+}
+    </style>
+</head>
+
+<body>
+    <div>
+        <header>
+            <div id="head">
+                <img src="/images/cdac logo.jfif" alt="" height="80" width="80">
+                <h3 style="margin-left: 10px;">Acadmy & consultancy </br> service Divison pune</h3>
+            </div>
+
+            <div id="head2">
+                <a href="Home.html">Home</a>
+                <a href="Home.html">Courses</a>
+                <a href="Home.html">Registraion</a>
+                <a href="Home.html">Schedule</a>
+                <a href="Home.html">Eligibility</a>
+                <a href="Home.html">Contact us</a>
+                <a href="Home.html">Feedback</a>
+            </div>
+        </header>
+        <div id="mid" style="margin: auto;">
+            <div class="form-wrapper">
+                <div id="form">
+                    <h2 style="color: red;">Student Registraion</h2>
+                    <span>Please note that all fields that have an asterist(*)are required to process your
+                        registraion. </br></br></span>
+                    
+
+                    <form action="">
+                        <table cellpadding = "7">
+                            <tr style="background-color: gray;   border-spacing: 0px;">
+                                <th colspan="2">Personal Details</th>
+                                <th colspan="2">Address</th>
+                            </tr>
+                            <tr>
+                                <td>Birth Date : </td>
+                                <td><input type="date" name="" id="" value="2024-11-01"></td>
+                                <td>Address : </td>
+                                <td><input type="text"></td>
+
+                            </tr>
+                            <tr>
+                                <td>
+                                    First Name : </td>
+                                <td><input type="text" name="" id=""></td>
+                                <td>*LandMark : </td>
+                                <td><input type="text"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Last Name : </td>
+                                <td><input type="text" name="" id=""></td>
+                                <td>*Town : </td>
+                                <td><input type="text"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Email : </td>
+                                <td><input type="email" name="" id=""></td>
+                                <td>*Country/State : </td>
+                                <td><input type="text"></td>
+
+                            </tr>
+                            <tr>
+                                <td>Telephone : </td>
+                                <td><input type="number" name="" id=""></td>
+                                <td>Country : </td>
+                                <td><select name="country" id="">
+                                        <option value="co1">India</option>
+                                        <option value="co2">USA</option>
+                                    </select></td>
+
+                            </tr>
+                            <tr>
+                                <td>Course : </td>
+                                <td><input type="radio" name="" id="" value="PG-DAC">PG-DAC
+                                    <input type="radio" name="" id="" value="PG-DBDA">PG-DBDA </br>
+                                    <input type="radio" name="" id="" value="PG-DMC">PG-DMC
+                                    <input type="radio" name="" id="" value="PG-DAI">PG-DAI
+                                </td>
+                                <td>Postcode : </td>
+                                <td><input type="number"></td>
+
+                            </tr>
+                            <tr>
+                                <td colspan="4" style="background-color: gray;" ><b>Educational Details</b></td>
+
+                            </tr>
+                            <tr>
+                                <td>Qualification : </td>
+                                <td><input type="text" name="" id="" placeholder="M.CS."></td>
+                                <td>*CGPA : </td>
+                                <td><input type="number" placeholder="9.1"></td>
+                            </tr>
+                            <tr>
+                                <td>College : </td>
+                                <td><input type="text" placeholder="PVG College"></td>
+                                <td>*University : </td>
+                                <td><input type="text" placeholder="Pune University"></td>
+                            </tr>
+                            <tr>
+                                <td colspan="2" ><input type="submit" style="float: right;" ></td>
+                                <td colspan="2"><input type="reset"></td>
+
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

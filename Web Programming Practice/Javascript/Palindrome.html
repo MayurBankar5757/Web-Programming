@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function palindrome(x){
+            let rev =0
+            let sum =0;
+            let y = x;
+            while(y > 0){
+                rev = y%10; 
+                sum = (sum *10)+ rev;
+                y = parseInt(y/10);
+               // console.log(sum);
+            }
+            console.log(sum);
+            console.log(x);
+            if(sum == x){
+                document.getElementById("palin").innerHTML="Palindrome Number";
+
+            }
+            else{
+                document.getElementById("palin").innerHTML="Not Palindrome Number";
+            }
+        }
+    </script>
+<div>
+    <form action="">
+        <h3>Enter a Num : </h3>
+        <input type="text" name = num>
+        <input type="button" value="check Palindrome" onclick="palindrome(num.value)">
+    </form>
+</div>
+<div id ="palin">
+
+</div>
+</body>
+</html>

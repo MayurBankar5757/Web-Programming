@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+   
+</head>
+<body>
+    <form>
+        UID :
+        <input type="text" name="uid" />
+        <br/>
+        Gender:
+        <input type="radio" name="gender" value="M" /> Male
+        <input type="radio" name="gender" value="F" /> Female
+        <br/>
+        Hobbies:
+        <input type="checkbox" name="h1" value="music" /> Music
+        <input type="checkbox" name="h2" value="surfing" /> Surfing
+        <input type="checkbox" name="h3" value="reading" /> Reading
+        <input type="checkbox" name="h4" value="treking" /> Treking
+        <br/>
+        City:
+        <select name="city" multiple size="3">
+            <option value="C01">Pune</option>
+            <option value="C03">Mumbai</option>
+            <option value="C05">Nagpur</option>
+            <option value="C08">Bangalore</option>
+            <option value="C09">Delhi</option>
+        </select>
+        <br/>
+        Comment:
+        <textarea rows="3" cols="50" name="comment">
+            Enter your comment here......
+        </textarea>
+        <br/>
+        <!-- state management -->
+        <input type="hidden" name="code" value="TID345" />
+        <br/>
+        <input type="submit" value="Register" />
+        <input type="reset" value="CLEAR" />
+        <!-- client side button , call js code -->
+        <input type="button" value="Click"
+         onclick="alert('hi')" />
+    </form>
+</body>
+</html>

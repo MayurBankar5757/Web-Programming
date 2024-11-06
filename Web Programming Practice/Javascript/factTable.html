@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function factorial(x){
+
+            let fact =1;
+        let msg ="";
+        
+        msg +="<table border= 1 style ='border-collapse : collapse;'cellpadding = 10>";
+            msg += "<tr>";
+            msg += "<td>";
+            msg+= "Number ";
+            msg += "</td>";
+            msg += "<td>";
+            msg += "Factorial";
+            msg += "</td>";
+        for(let i=1; i<5; i++){
+            
+            console.log(msg);
+            msg += "<tr>";
+            msg += "<td>";
+            msg += i;
+            msg += "</td>";
+            msg += "<td>";
+            fact = i*fact;
+            msg += fact;
+            msg += "</td>";
+            msg += "</tr>";
+            
+        }
+        msg += "</table>";
+        document.getElementById("table").innerHTML=msg;
+        }
+      
+        
+
+    </script>
+    <div>
+        <form action="">
+            <input type="button" value ="Factorial Table" onclick="factorial()">
+        </form>
+    </div>
+   </br>
+   </br>
+   </br>
+
+    <div id = "table">
+
+    </div>
+</body>
+</html>
